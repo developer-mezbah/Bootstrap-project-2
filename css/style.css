@@ -27,10 +27,31 @@
 .brand-section{
     background-color: #0e0e0e11 !important;
 }
+.bg-talk{
+    background-color: #031633;
+}
+.bg-footer{
+    background-color: #3F454D;
+}
 
+li{
+    list-style: none;
+}
+footer a{
+    text-decoration: none;
+    color: #ffffff7a;
+    transition: .1s;
+}
+footer .footer-a li{
+    padding: 10px 0px !important;
+}
+footer ul li:hover a{
+    color: #85E0CE;
+}
 
-
-
+.copywright{
+    color: #ffffff7a !important;
+}
 
 /* Responsive */
 @media only screen and (max-width: 768px){
