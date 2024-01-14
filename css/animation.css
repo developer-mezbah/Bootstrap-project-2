@@ -1,0 +1,85 @@
+.header {
+    margin-top: 8px;
+  }
+  .top-scroll {
+    position: fixed;
+    background: #00afaa;
+    width: 100vw;
+    top: 0;
+    height: 8px;
+    z-index: 999999;
+    scale: 0 1;
+    animation: top-loader linear;
+    transform-origin: left;
+    animation-timeline: scroll(root);
+  }
+  @keyframes top-loader {
+    to {
+      scale: 1 1;
+    }
+  }
+  
+  
+  /* Banner Animation */
+  .banner {
+    animation: banner-animation linear;
+    animation-timeline: view();
+    animation-range: 50% exit;
+    background-size: 100% 100%;
+  }
+  @keyframes banner-animation {
+    to {
+      background-size: 200% 200%;
+      background-position: bottom;
+    }
+  }
+  
+  /* Horizontal Animation */
+  
+  .brand-section {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  .horizontalAnimaton {
+    display: flex;
+    width: max-content;
+    gap: 8%;
+    animation: h-animation linear;
+    animation-timeline: scroll(root);
+  }
+  @keyframes h-animation {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  /* Fade Left  */
+  .fade_left {
+    transform: translateX(50%);
+    opacity: 0;
+    animation: fadeLeft linear forwards;
+    animation-timeline: view();
+    animation-range: 10% 50%;
+  }
+  @keyframes fadeLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  
+  /* Fade Right  */
+  .fade_right {
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: fadeRight linear forwards;
+    animation-timeline: view();
+    animation-range: 10% 50%;
+  }
+  @keyframes fadeRight {
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  

@@ -1,3 +1,4 @@
+
 .text-Primary{
     color: #3f454c !important;
     
@@ -62,4 +63,9 @@ footer ul li:hover a{
     .navbar-nav{
         padding-bottom: 20px !important;
     }
+}
+
+.blog-items .col-md-6{
+    padding: 0;
+    margin: 0;
 }
